@@ -949,7 +949,7 @@ public class StrmanTests {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void isEnclosedBetween_shouldThrowIllegalArgumentExceptionWhenInputIsNull() throwsException {
+    public void isEnclosedBetween_shouldThrowIllegalArgumentExceptionWhenInputIsNull() throws Exception {
 	assertThat(isEnclosedBetween(null, "*"), is(false));
     }
 
