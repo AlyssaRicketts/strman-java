@@ -948,6 +948,11 @@ public class StrmanTests {
         assertThat(isEnclosedBetween("shekhar", null), is(false));
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void isEnclosedBetween_shouldThrowIllegalArgumentExceptionWhenInputIsNull() throwsException {
+	assertThat(isEnclosedBetween(null, "*"), is(false));
+    }
+
     @Test
     public void words_shouldConvertTextToWords() throws Exception {
         final String line = "This is a string, with words!";
