@@ -99,10 +99,6 @@ artifacts {
     archives javadocJar, sourcesJar
 }
 
-signing {
-    sign configurations.archives
-}
-
 jacocoTestReport {
     reports {
         xml.enabled = true
